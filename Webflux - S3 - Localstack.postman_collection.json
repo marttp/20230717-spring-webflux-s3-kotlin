@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "d1105f02-04a4-46cb-9a98-5cb7777fc016",
+		"name": "Webflux - S3 - Localstack",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7653867"
+	},
+	"item": [
+		{
+			"name": "Upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/tpcoder/Documents/Blogs/Side project guideline/Screenshot 2566-07-16 at 10.43.50.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/object/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"object",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Object data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/object/Screenshot 2566-07-16 at 10.43.50.png",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"object",
+						"Screenshot 2566-07-16 at 10.43.50.png"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Object data [Preview]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/object/Screenshot 2566-07-16 at 10.43.50.png/preview",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"object",
+						"Screenshot 2566-07-16 at 10.43.50.png",
+						"preview"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all object",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/object",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"object"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
